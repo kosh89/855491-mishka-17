@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Васильев](https://up.htmlacademy.ru/adaptive/17/user/855491).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://github.com/Rogatnev-Nikita).
 
 ---
 
