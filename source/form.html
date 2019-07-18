@@ -6,18 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="http://placehold.it/86x35" width="86" height="35"
-        alt="Интернет-магазин Мишка">
-    </a>
-    <button class="header__nav-toggle" type="button">Показать меню</button>
-    <nav class="header__navigation navigation">
-      <div class="navigation__wrapper">
+    <div class="wrapper">
+      <nav class="header__navigation navigation">
         <ul class="navigation__list">
+          <li class="navigation__item navigation__item--logo">
+            <a href="index.html" class="navigation__logo">
+              <img class="navigation__logo-image" src="img/logo-mobile.svg" width="86" height="35"
+                alt="Интернет-магазин Мишка">
+            </a>
+            <button class="header__nav-toggle" type="button" aria-label="show-menu"></button>
+          </li>
           <li class="navigation__item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
@@ -31,13 +35,14 @@
             <a href="#">Корзина: <span>пока пуста</span></a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main>
     <h1 class="page-heading">Вязание на заказ</h1>
     <section class="order">
+      <h2 class="visually-hidden">Форма заказа</h2>
       <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">

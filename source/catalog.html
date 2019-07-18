@@ -6,18 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="http://placehold.it/86x35" width="86" height="35"
-        alt="Интернет-магазин Мишка">
-    </a>
-    <button class="header__nav-toggle" type="button">Показать меню</button>
-    <nav class="header__navigation navigation">
-      <div class="navigation__wrapper">
+    <div class="wrapper">
+      <nav class="header__navigation navigation">
         <ul class="navigation__list">
+          <li class="navigation__item navigation__item--logo">
+            <a href="index.html" class="navigation__logo">
+              <img class="navigation__logo-image" src="img/logo-mobile.svg" width="86" height="35"
+                alt="Интернет-магазин Мишка">
+            </a>
+            <button class="header__nav-toggle" type="button" aria-label="show-menu"></button>
+          </li>
           <li class="navigation__item">
             <a>Каталог товаров</a>
           </li>
@@ -31,8 +35,8 @@
             <a href="#">Корзина: <span>пока пуста</span></a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -56,7 +60,8 @@
         </div>
       </article>
       <article class="goods__item">
-        <img class="goods__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
+        <img class="goods__image" src="http://placehold.it/260x195" width="260" height="195"
+          alt="Большая корзинка для игрушек">
         <div class="goods__info">
           <h3 class="goods__title">Большая корзинка для игрушек</h3>
           <p class="goods__description">Диаметр 30 см, высота 30 см</p>
@@ -68,7 +73,8 @@
     <section class="process">
       <h2 class="process__heading heading">Процесс производства</h2>
       <img class="process__video" src="http://placehold.it/260x150" width="260" height="150" alt="Тут будет видео">
-      <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+        появляются наши товары.</p>
       <a class="process__order button" href="#">Сделать заказ</a>
     </section>
 
