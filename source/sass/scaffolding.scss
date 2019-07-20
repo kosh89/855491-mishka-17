@@ -1,34 +1,35 @@
-* {  
+* {
   box-sizing: inherit;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     box-sizing: inherit;
   }
 }
 
 @font-face {
-  font-family: 'Open Sans';  
-  src: url(../fonts/opensans.woff) format('woff');
-  src: url(../fonts/opensans.woff2) format('woff2');
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Open Sans';  
-  src: url(../fonts/opensansbold.woff) format('woff');
-  src: url(../fonts/opensansbold.woff2) format('woff2');
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2");
   font-weight: 600;
 }
 
 body {
   min-width: 320px;
-  background-color: #fff;
+  background-color: #ffffff;
   box-sizing: border-box;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
 }
 
 .visually-hidden {
