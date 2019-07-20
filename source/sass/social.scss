@@ -1,0 +1,25 @@
+.social {
+  padding: 18px 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  &--facebook {
+    margin: 0 25px;
+  }  
+}
+
+.social__link {
+  display: block;
+  padding: 5px;
+}
