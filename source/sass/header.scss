@@ -1,9 +1,14 @@
+.header {
+  position: relative;
+}
+
 .header__nav-toggle {
   background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
   position: absolute;
+  top: 30px;
   right: 30px;
   width: 20px;
   height: 14px;

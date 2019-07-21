@@ -1,0 +1,7 @@
+@mixin menu-divider() {
+  position: absolute;
+  content: "";
+  width: 150vw;
+  height: 1px;
+  background-color: #ececec;
+}
