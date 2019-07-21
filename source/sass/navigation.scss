@@ -19,6 +19,10 @@
   justify-content: center;
   align-items: center;
 
+  &--logo {
+    align-self: center;
+  }
+
   &--logo::before {
     @include menu-divider();
     top: 0;
@@ -27,6 +31,10 @@
   &::after {
     @include menu-divider();
     bottom: 0;
+  }
+
+  &--delivery {
+    display: none;
   }
 }
 
@@ -38,14 +46,12 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &--active {
-    &:hover {
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -81,4 +87,99 @@
   fill: rgba(0, 0, 0, 0.2);
   left: -45px;
   top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .navigation__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .navigation__item {
+    justify-content: flex-start;
+
+    &--logo {
+      min-width: 368px;
+      padding-left: 50px;
+      flex-grow: 1;
+      order: -1;
+    }
+
+    &--search {
+      width: 85px;
+      overflow: hidden;
+      text-indent: -9999px;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+      order: -1;
+    }
+
+    &--cart {
+      width: 315px;
+      padding-left: 84px;
+      order: -1;
+    }
+
+    &--catalog {
+      background-color: #fafafa;
+      padding: 0 20px 0 50px;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    &--order {
+      background-color: #fafafa;
+      padding: 0 20px 0 20px;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    &--delivery {
+      display: flex;
+      background-color: #fafafa;
+      padding-right: 50px;
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 400;
+      flex-grow: 1;
+      justify-content: flex-end;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  .navigation__logo {
+    width: 113px;
+    height: 46px;
+    background-image: url("../img/logo-tablet.svg")
+  }
+
+  .navigation__icon {
+    &--search {
+      left: 34px;
+    }
+
+    &--cart {
+      left: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .navigation__item {
+    &--logo {
+      min-width: 550px;
+    }
+  }
 }
