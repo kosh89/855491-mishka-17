@@ -1,8 +1,8 @@
 @mixin menu-divider() {
   position: absolute;
   content: "";
-  width: 150vw;
+  width: 200vw;
   height: 1px;
   background-color: #ececec;
-  left: -200px;
+  left: -340px;
 }

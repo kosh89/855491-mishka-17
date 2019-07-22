@@ -1,0 +1,63 @@
+.about {
+  margin-bottom: 40px;
+}
+
+.about__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.about__heading {
+  margin-bottom: 7px;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 600;
+  padding-top: 82px;
+  position: relative;
+}
+
+.about__icon {
+  position: absolute;
+  fill: #63d1bb;
+
+  &--eco {
+    top: 25px;
+    left: 10px;
+  }
+
+  &--style {
+    top: 27px;
+    left: 2px;
+  }
+
+  &--likes {
+    top: 32px;
+    left: 9px;
+  }
+
+  &--handmade {
+    top: 30px;
+    left: 4px;
+  }
+
+  &--homeland {
+    top: 33px;
+    left: -3px;
+  }
+
+  &--pack {
+    top: 31px;
+    left: 4px;
+  }
+}

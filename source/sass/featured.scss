@@ -1,7 +1,27 @@
 .featured {
-  padding: 30px;
+  width: 100%;
+  margin: 0 auto 30px;
+  padding-bottom: 43px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    min-width: 100%;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: bottom;
+    background-size: contain;
+    bottom: 0;
+  }
+}
+
+.featured__heading-wrapper {
+  margin-bottom: 25px;
+  width: 260px;
 }
 
 .featured__heading {
@@ -11,23 +31,35 @@
 .featured__week-good {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 17px;
   font-weight: 600;
   color: #63d1bb;
   text-transform: uppercase;
 }
 
+.featured__wrapper {
+  width: 260px;
+}
+
+.featured__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
 .featured__description {
-  margin: 25px 0;
+  margin: 0;
+  margin-bottom: 25px;
   padding: 0;
 }
 
 .featured__params {
-  width: 100%;
-  margin-bottom: 30px;
+  align-self: stretch;
+  font-size: 15px;
+  line-height: 20px;
 }
 
-.featured__line {
+.featured__row {
   border-bottom: 1px solid #ececec;
 }
 
@@ -36,11 +68,22 @@
 }
 
 .featured__link {
-  text-align: center;
+  display: block;
+  width: 260px;
+  height: 315px;
+  background-image: url("../img/triple-set-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.featured__order-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
 }
 
 .featured__price {
-  margin: 25px 0;
+  margin-bottom: 25px;
   text-align: center;
   font-size: 17px;
   line-height: 24px;
@@ -48,6 +91,51 @@
   color: #444444;
 }
 
-.featured__order {
-  margin: 0 auto;
+@media screen and (min-width: 768px) {
+  .featured {
+    margin-bottom: 45px;
+    padding-bottom: 68px;
+
+    &::after {
+      height: 15px;
+    }
+  }
+
+  .featured__heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 668px;
+  }
+
+  .featured__week-good {
+    width: 90px;
+  }
+
+  .featured__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    align-items: flex-start;
+    position: relative;
+    min-height: 404px;
+  }
+
+  .featured__description-wrapper,
+  .featured__order-wrapper {
+    width: 290px;
+  }
+
+  .featured__order-wrapper {
+    margin-top: auto;
+  }
+
+  .featured__link {
+    position: absolute;
+    right: 0;
+    width: 333px;
+    height: 404px;
+    order: 3;
+    background-image: url("../img/triple-set-tablet@1x.jpg");
+  }
 }

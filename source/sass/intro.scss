@@ -1,8 +1,12 @@
+.intro {
+  background-color: #fafafa;
+  margin-bottom: 30px;
+}
+
 .intro__image {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center -25px;
   min-height: 284px;
   padding: 65px 30px 20px;
 }
@@ -39,6 +43,7 @@
 
   &:hover {
     height: 108px;
+    margin-top: -5px;
 
     .intro__icon {
       fill: rgba(20, 144, 128, 0.7);
@@ -62,5 +67,43 @@
 
   &--toys {
     right: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    position: relative;
+    margin-bottom: 40px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      min-width: 100%;
+      height: 13px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: bottom;
+      background-size: contain;
+      bottom: 0;
+    }
+  }
+
+  .intro__heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .intro__image {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center -90px;
+    min-height: 537px;
+  }
+
+  .intro__wrapper {
+    flex-direction: row;
+    padding: 0 50px;
+  }
+
+  .intro__links {
+    flex-grow: 1;
   }
 }
