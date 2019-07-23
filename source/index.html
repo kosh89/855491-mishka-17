@@ -11,8 +11,10 @@
 
 <body>
   <header class="header">
-    <button class="header__nav-toggle" type="button" aria-label="show-menu"></button>
-    <nav class="header__navigation navigation">
+    <button class="header__nav-toggle" type="button" aria-label="show-menu">
+      <span></span>
+    </button>
+    <nav class="header__navigation navigation navigation--closed navigation--nojs">
       <ul class="navigation__list">
         <div class="navigation__wrapper">
           <li class="navigation__item navigation__item--logo">
@@ -55,7 +57,7 @@
     <h1 class="visually-hidden">Интернет-магазин "Мишка"</h1>
     <section class="intro">
       <div class="intro__image">
-        <h2 class="intro__heading heading">
+        <h2 class="page-heading page-heading--main">
           Милые штуки ручной<br>работы для дома
         </h2>
       </div>
@@ -116,7 +118,9 @@
             </tr>
           </table>
         </div>
-        <a class="featured__link" href="#"></a>
+        <a class="featured__link" href="#">
+          <img src="img/triple-set-mobile@1x.jpg" width="333" height="404" alt="Вязаные корзинки">
+        </a>
         <div class="featured__order-wrapper">
           <span class="featured__price">Цена: 990 руб.</span>
           <a class="featured__order button" href="#">Заказать</a>
@@ -128,7 +132,7 @@
       <div class="about__wrapper">
         <h2 class="about__heading heading">Коротко о нас:</h2>
         <ul class="about__list">
-          <li class="about__item">
+          <li class="about__item about__item--eco">
             <svg class="about__icon about__icon--eco" x="0px" y="0px" width="31.972px" height="37.301px"
               viewBox="8.014 4.35 31.972 37.301" enable-background="new 8.014 4.35 31.972 37.301" xml:space="preserve">
               <path
@@ -136,7 +140,7 @@
             </svg>
             Экологически чистые материалы
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--style">
             <svg class="about__icon about__icon--style" x="0px" y="0px" width="46.575px" height="27.332px"
               viewBox="46.212 56.834 46.575 27.332" enable-background="new 46.212 56.834 46.575 27.332"
               xml:space="preserve">
@@ -147,7 +151,7 @@
             </svg>
             Скандинавский стиль по российской цене
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--likes">
             <svg class="about__icon about__icon--likes" x="0px" y="0px" width="33.05px" height="27.857px"
               viewBox="47.475 50.071 33.05 27.857" enable-background="new 47.475 50.071 33.05 27.857"
               xml:space="preserve">
@@ -156,7 +160,7 @@
             </svg>
             Увеличивает лайки на фотографиях
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--handmade">
             <svg class="about__icon about__icon--handmade" x="0px" y="0px" width="34.373px" height="34.373px"
               viewBox="0 0 34.373 34.373" enable-background="new 0 0 34.373 34.373" xml:space="preserve">
               <g>
@@ -182,7 +186,7 @@
             </svg>
             Связано вручную с любовью и умилением
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--homeland">
             <svg class="about__icon about__icon--homeland" x="0px" y="0px" width="54.156px" height="23.183px"
               viewBox="612.532 500.386 54.156 23.183" enable-background="new 612.532 500.386 54.156 23.183"
               xml:space="preserve">
@@ -195,7 +199,7 @@
             </svg>
             Поддержка отечественного производителя
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--pack">
             <svg class="about__icon about__icon--pack" x="0px" y="0px" width="32.666px" height="32.486px"
               viewBox="239.665 239.757 32.666 32.486" enable-background="new 239.665 239.757 32.666 32.486"
               xml:space="preserve">
@@ -209,25 +213,42 @@
     </section>
 
     <section class="reviews">
-      <h2 class="reviews__heading heading">Отзывы</h2>
-      <div class="slider">
-        <article class="reviews__item">
-          <blockquote>
-            <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-              стильными, а также набирают больше лайков!
-            </p>
-            <cite class="reviews__author-name">Анастасия Красильникова</cite>
-            <a href="#" class="reviews__author-nick">@misssssiskras</a>
-          </blockquote>
-        </article>
-        <button class="reviews__button reviews__button--prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__button reviews__button--next" type="button">Следующий отзыв</button>
-        <a class="reviews__write button" href="#">Написать</a>
+      <div class="reviews__wrapper">
+        <h2 class="reviews__heading heading">Отзывы</h2>
+        <div class="slider">
+          <article class="slider__item">
+            <blockquote class="slider__quote">
+              <p class="slider__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+                инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+                стильными, а также набирают больше лайков!
+              </p>
+              <cite class="slider__author-name">Анастасия Красильникова</cite>
+              <a href="#" class="slider__author-nick">@misssssiskras</a>
+            </blockquote>
+          </article>
+          <div class="slider__buttons-wrapper">
+            <button class="slider__button slider__button--prev" type="button">
+              <svg class="slider__arrow" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003"
+                enable-background="new 0 0 50 26.003" xml:space="preserve">
+                <polygon
+                  points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 " />
+              </svg>
+            </button>
+            <button class="slider__button slider__button--next" type="button">
+              <svg class="slider__arrow" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003"
+                enable-background="new 0 0 50 26.003" xml:space="preserve">
+                <polygon
+                  points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 " />
+              </svg>
+
+            </button>
+          </div>
+          <a class="slider__write button" href="#">Написать</a>
+        </div>
       </div>
     </section>
-<!--
+    <!--
     <section class="contacts">
       <h2 class="contacts__heading heading"></h2>
       <table class="contacts__table">
@@ -328,6 +349,8 @@
       </a>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

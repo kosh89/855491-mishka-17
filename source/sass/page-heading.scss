@@ -1,0 +1,30 @@
+.page-heading {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 600;
+  min-height: 176px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &--main {
+    align-items: stretch;
+  }
+
+  &--catalog,
+  &--form {
+    background-color: #f1f1f1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-heading {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 600;
+    min-height: 169px;
+  }
+}
