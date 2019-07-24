@@ -33,6 +33,14 @@
     bottom: 0;
   }
 
+  &--new {
+    display: none;
+  }
+
+  &--sale {
+    display: none;
+  }
+
   &--delivery {
     display: none;
   }
