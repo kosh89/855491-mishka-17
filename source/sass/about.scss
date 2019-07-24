@@ -74,7 +74,7 @@
 
   .about__list {
     flex-direction: row;
-    flex-flow: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -107,5 +107,15 @@
     &--pack {
       order: 6;
     }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .about {
+    margin-bottom: 63px;
+  }
+
+  .about__wrapper {
+    width: 700px;
   }
 }

@@ -81,7 +81,7 @@
   .slider__write {
     position: absolute;
     top: -96px;
-    right: 0px;
+    right: 0;
     width: 176px;
   }
 
@@ -95,5 +95,19 @@
 
   .slider__button {
     border: none;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .slider__text {
+    margin-bottom: 41px;
+  }
+
+  .slider__buttons-wrapper {
+    right: -79px;
+  }
+
+  .slider__write {
+    right: -78px;
   }
 }
