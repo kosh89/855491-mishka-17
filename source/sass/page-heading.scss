@@ -19,6 +19,10 @@
     background-color: #f1f1f1;
     margin-bottom: 30px;
   }
+
+  &--form {
+    margin-bottom: 22px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -45,6 +49,10 @@
         left: 0;
       }
     }
+
+    &--form {
+      margin-bottom: 61px;
+    }
   }
 }
 
@@ -53,5 +61,12 @@
     font-size: 53px;
     line-height: 57px;
     min-height: 252px;
+    margin-bottom: 129px;
+
+    &--catalog {
+      &::after {
+        bottom: -8px;
+      }
+    }
   }
 }

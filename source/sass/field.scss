@@ -1,0 +1,183 @@
+.field {
+  margin: 0;
+  padding: 0;
+  padding-top: 34px;
+  border: none;
+  border-top: 1px solid #63d1bb;
+
+  &--type {
+    margin-bottom: 20px;
+
+    label {
+      padding-left: 64px;
+      position: relative;
+    }
+  }
+
+  &--color {
+    padding-top: 35px;
+
+    label {
+      padding-left: 64px;
+      position: relative;
+    }
+  }
+
+  &--fio {
+    padding-top: 29px;
+    margin-bottom: 12px;
+  }
+
+  &--tel {
+    padding-top: 3px;
+    margin-bottom: 8px;
+  }
+
+  &--email {
+    padding-top: 6px;
+    margin-bottom: 8px;
+  }
+
+  &--extra {
+    padding-top: 25px;
+    margin-bottom: 18px;
+  }
+}
+
+.field__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--color {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.field__item {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 600;
+  display: flex;
+  margin-bottom: 24px;
+
+  &--color {
+    margin-bottom: 43px;
+  }
+
+  &--fio {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  &--tel {
+    font-size: 19px;
+  }
+
+  &--extra {
+    margin-bottom: 0;
+  }
+}
+
+.field__text,
+.field__textarea {
+  font-weight: 400;
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+    font-weight: 400;
+  }
+}
+
+.field__name {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #63d1bb;
+  text-transform: uppercase;
+  padding-right: 25px;
+}
+
+.field__text {
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding: 14px 0;
+  width: 100%;
+}
+
+.field__textarea {
+  resize: none;
+  width: 100%;
+  height: 140px;
+  border: 2px solid #000000;
+  padding: 14px;
+}
+
+.field__radio + label::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+  top: -9px;
+  left: 0;
+}
+
+.field__radio:checked + label::before {
+  background-color: #62d1ba;
+  box-shadow: inset 0px 0 0 10px #ffffff;
+}
+
+.field__checkbox + label::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 2px solid #444444;
+  top: -11px;
+  left: 0;
+}
+
+.field__checkbox:checked + label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .field {
+    position: relative;
+    padding-left: 167px;
+    border: none;
+  }
+
+  .field__name {
+    position: absolute;
+    left: 0;
+  }
+
+  .field__list {
+    &--color {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .field__item {
+    font-size: 19px;
+
+    &--fio {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .field {
+    padding-left: 175px;
+  }
+}

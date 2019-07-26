@@ -60,40 +60,40 @@
   </header>
 
   <main>
-    <h1 class="page-heading page-heading--catalog">Вязание на заказ</h1>
+    <h1 class="page-heading page-heading--form">Вязание на заказ</h1>
     <section class="order">
       <h2 class="visually-hidden">Форма заказа</h2>
       <div class="order__wrapper">
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
           свяжемся с вами, чтобы уточнить детали.</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="field">
+          <fieldset class="field field--type">
             <legend class="field__name">Тип</legend>
             <ul class="field__list">
               <li class="field__item field__item--type">
-                <input class="visually-hidden field__radio" type="radio" id="type-interior" name="type">
+                <input class="visually-hidden field__radio" type="radio" id="type-interior" name="type" checked>
                 <label for="type-interior">Аксессуар для интерьера</label>
               </li>
-              <li>
+              <li class="field__item field__item--type">
                 <input class="visually-hidden field__radio" type="radio" id="type-toys" name="type">
                 <label for="type-toys">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="field">
+          <fieldset class="field field--color">
             <legend class="field__name">Цвет</legend>
-            <ul class="field__list">
+            <ul class="field__list field__list--color">
               <li class="field__item field__item--color">
-                <input class="visually-hidden field__checkbox" type="checkbox" id="color-white" name="color-white">
+                <input class="visually-hidden field__checkbox" type="checkbox" id="color-white" name="color-white" checked>
                 <label for="color-white">Белый</label>
               </li>
               <li class="field__item field__item--color">
-                <input class="visually-hidden field__checkbox" type="checkbox" id="color-grey" name="color-grey">
+                <input class="visually-hidden field__checkbox" type="checkbox" id="color-grey" name="color-grey" checked>
                 <label for="color-grey">Серый</label>
               </li>
               <li class="field__item field__item--color">
                 <input class="visually-hidden field__checkbox" type="checkbox" id="color-tiffany" name="color-tiffany">
-                <label for="color-tiffany">"Тиффани"</label>
+                <label for="color-tiffany">«Тиффани»</label>
               </li>
               <li class="field__item field__item--color">
                 <input class="visually-hidden field__checkbox" type="checkbox" id="color-black" name="color-black">
@@ -109,7 +109,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="field">
+          <fieldset class="field field--fio">
             <legend class="field__name">ФИО</legend>
             <ul class="field__list">
               <li class="field__item field__item--fio">
@@ -129,7 +129,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="field">
+          <fieldset class="field field--tel">
             <legend class="field__name">Тел</legend>
             <ul class="field__list">
               <li class="field__item field__item--tel">
@@ -138,7 +138,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="field">
+          <fieldset class="field field--email">
             <legend class="field__name">E-mail</legend>
             <ul class="field__list">
               <li class="field__item field__item--email">
@@ -146,16 +146,18 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="field">
+          <fieldset class="field field--extra">
             <legend class="field__name">Доп</legend>
             <ul class="field__list">
               <li class="field__item field__item--extra">
-                <textarea class="field__textarea" id="extra" name="extra" cols="30" rows="7"></textarea>
+                <textarea class="field__textarea" id="extra" name="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </li>
             </ul>
           </fieldset>
-          <p class="form__info">*Поля обязательны для заполнения</p>
-          <input class="form__submit button" type="submit" value="Отправить заказ">
+          <div class="form__submit-wrapper">
+            <p class="form__info">*Поля обязательны для заполнения</p>
+            <input class="form__submit button" type="submit" value="Отправить заказ">
+          </div>
         </form>
       </div>
     </section>
