@@ -1,12 +1,33 @@
 .copyright {
+  padding: 23px 0;
+}
+
+.copyright__link {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 25px 0 35px;
-}
-
-.copyright span {
   font-weight: 600;
   font-size: 19px;
   line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    .copyright__logo {
+      fill: rgba(70, 193, 174, 1);
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    .copyright__logo {
+      fill: rgba(70, 193, 174, 0.3);
+    }
+  }
+}
+
+.copyright__logo {
+  margin-left: 30px;
+  fill: rgba(99, 209, 187, 1);
 }

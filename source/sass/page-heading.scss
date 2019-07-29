@@ -1,0 +1,72 @@
+.page-heading {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 600;
+  min-height: 176px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &--main {
+    align-items: stretch;
+  }
+
+  &--catalog,
+  &--form {
+    background-color: #f1f1f1;
+    margin-bottom: 30px;
+  }
+
+  &--form {
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-heading {
+    font-size: 43px;
+    line-height: 50px;
+    min-height: 235px;
+
+    &--catalog,
+    &--form {
+      position: relative;
+      margin-bottom: 68px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        min-width: 100%;
+        height: 23px;
+        background-image: url("../img/bg-zigzag-fill.svg");
+        background-repeat: repeat-x;
+        background-position: bottom;
+        background-size: contain;
+        bottom: -1px;
+        left: 0;
+      }
+    }
+
+    &--form {
+      margin-bottom: 61px;
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .page-heading {
+    font-size: 53px;
+    line-height: 57px;
+    min-height: 252px;
+    margin-bottom: 129px;
+
+    &--catalog {
+      &::after {
+        bottom: -8px;
+      }
+    }
+  }
+}

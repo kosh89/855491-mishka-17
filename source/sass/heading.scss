@@ -1,8 +1,22 @@
 .heading {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
