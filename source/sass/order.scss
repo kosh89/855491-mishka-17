@@ -15,12 +15,17 @@
 }
 
 @media screen and (min-width: 768px) {
+  .order {
+    margin-bottom: 32px;
+  }
+
   .order__wrapper {
     width: 668px;
   }
 
   .order__text {
     font-size: 17px;
+    margin-bottom: 38px;
   }
 
   .order__submit {
@@ -32,5 +37,9 @@
 @media screen and (min-width: 1150px) {
   .order__wrapper {
     width: 1050px;
+  }
+
+  .order__text {
+    padding: 0 175px;
   }
 }

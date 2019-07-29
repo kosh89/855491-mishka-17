@@ -39,3 +39,17 @@
 .social__icon {
   fill: rgba(34, 31, 31, 1);
 }
+
+@media screen and (min-width: 768px) {
+  .social {
+    border-bottom: none;
+    padding: 0;
+    padding-left: 76px;
+  }
+
+  .social__item {
+    &--facebook {
+      margin: 0 31px;
+    }
+  }
+}

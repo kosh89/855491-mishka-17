@@ -32,6 +32,11 @@ body {
   color: #000000;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
