@@ -60,13 +60,17 @@
   .page-heading {
     font-size: 53px;
     line-height: 57px;
-    min-height: 252px;
-    margin-bottom: 129px;
+    min-height: 268px;
+    margin-bottom: 113px;
+    align-items: flex-start;
+    padding-top: 92px;
 
-    &--catalog {
-      &::after {
-        bottom: -8px;
-      }
+    &::after {
+      height: 37px;
+    }
+
+    &--form {
+      margin-bottom: 106px;
     }
   }
 }
