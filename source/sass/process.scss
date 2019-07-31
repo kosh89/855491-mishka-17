@@ -26,9 +26,26 @@
   color: #444444;
 }
 
-.process__video {
+.process__video-wrapper {
   width: 260px;
   height: 150px;
+  position: relative;
+}
+
+.process__button-play {
+  position: absolute;
+  top: calc(50% - 38px);
+  left: calc(50% - 50px);
+  transition: transform ease 0.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    fill-opacity: 0.3;
+  }
 }
 
 .process__wrapper,
@@ -59,10 +76,15 @@
     top: 32px;
   }
 
-  .process__video {
+  .process__video-wrapper {
     order: -1;
     width: 668px;
     height: 455px;
+
+    img {
+      width: 668px;
+      height: 455px;
+    }
   }
 
   .process__text {
@@ -109,10 +131,16 @@
     margin-bottom: 47px;
   }
 
-  .process__video {
+  .process__video-wrapper {
     position: absolute;
     width: 685px;
     height: 455px;
     left: 0;
+    top: 0;
+
+    img {
+      width: 685px;
+      height: 455px;
+    }
   }
 }
