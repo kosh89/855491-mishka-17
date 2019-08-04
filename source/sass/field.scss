@@ -61,6 +61,7 @@
   font-weight: 600;
   display: flex;
   margin-bottom: 24px;
+  position: relative;
 
   &--color {
     margin-bottom: 43px;
@@ -145,6 +146,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
+}
+
+.field__icon {
+  position: absolute;
+  right: 8px;
+  top: 15px;
+  fill-opacity: 0.2;
+
+  &--email {
+    right: 4px;
+    top: 12px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -315,6 +328,15 @@
   .field__checkbox:checked + label::before {
     background-size: 60%;
   }
+
+  .field__icon {
+    right: 25px;
+
+    &--email {
+      right: 21px;
+      top: 15px;
+    }
+  }
 }
 
 @media screen and (min-width: 1150px) {
@@ -333,5 +355,15 @@
 
   .field__name {
     left: 61px;
+  }
+
+  .field__icon {
+    right: 9px;
+    top: 13px;
+
+    &--email {
+      right: 5px;
+      top: 14px;
+    }
   }
 }
