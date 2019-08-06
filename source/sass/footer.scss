@@ -8,11 +8,11 @@
 .footer__logo {
   display: none;
 
-  &[href]:hover {
+  &[href]:hover svg {
     fill: #46c1ae;
   }
 
-  &[href]:active {
+  &[href]:active svg {
     opacity: 0.3;
   }
 }
