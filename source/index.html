@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="header">
     <button class="header__nav-toggle" type="button" aria-label="show-menu">
       <span></span>
@@ -29,14 +33,14 @@
           <li class="navigation__item navigation__item--search">
             <a class="navigation__link" href="#">Поиск по сайту
               <svg class="navigation__icon navigation__icon--search" width="17.6" height="17.6">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
+                <use xlink:href="#icon-search"></use>
               </svg>
             </a>
           </li>
           <li class="navigation__item navigation__item--cart">
             <a class="navigation__link" href="#">Корзина: <span>пока пуста</span>
               <svg class="navigation__icon navigation__icon--cart" width="20.294px" height="18.849px">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                <use xlink:href="#icon-cart"></use>
               </svg>
             </a>
           </li>
@@ -66,13 +70,13 @@
         <a href="#" class="intro__links intro__links--interior">
           Предметы<br> интерьера
           <svg class="intro__icon intro__icon--interior" width="40.219px" height="62.411px">
-            <use xlink:href="img/sprite.svg#icon-interior"></use>
+            <use xlink:href="#icon-interior"></use>
           </svg>
         </a>
         <a href="#" class="intro__links intro__links--toys">
           Детские<br> игрушки
           <svg class="intro__icon intro__icon--toys" width="60px" height="59.62px">
-            <use xlink:href="img/sprite.svg#icon-toys"></use>
+            <use xlink:href="#icon-toy"></use>
           </svg>
         </a>
       </div>
@@ -132,37 +136,37 @@
         <ul class="about__list">
           <li class="about__item about__item--eco">
             <svg class="about__icon about__icon--eco" width="31.972px" height="37.301px">
-              <use xlink:href="img/sprite.svg#icon-eco"></use>
+              <use xlink:href="#icon-feature-flower"></use>
             </svg>
             Экологически чистые материалы
           </li>
           <li class="about__item about__item--style">
             <svg class="about__icon about__icon--style" width="46.575px" height="27.332px">
-              <use xlink:href="img/sprite.svg#icon-style"></use>
+              <use xlink:href="#icon-feature-money"></use>
             </svg>
             Скандинавский стиль по российской цене
           </li>
           <li class="about__item about__item--likes">
             <svg class="about__icon about__icon--likes" width="33.05px" height="27.857px">
-              <use xlink:href="img/sprite.svg#icon-likes"></use>
+              <use xlink:href="#icon-feature-heart"></use>
             </svg>
             Увеличивает лайки на фотографиях
           </li>
           <li class="about__item about__item--handmade">
             <svg class="about__icon about__icon--handmade" width="34.373px" height="34.373px">
-              <use xlink:href="img/sprite.svg#icon-handmade"></use>
+              <use xlink:href="#icon-feature-ball"></use>
             </svg>
             Связано вручную с любовью и умилением
           </li>
           <li class="about__item about__item--homeland">
             <svg class="about__icon about__icon--homeland" width="54.156px" height="23.183px">
-              <use xlink:href="img/sprite.svg#icon-homeland"></use>
+              <use xlink:href="#icon-feature-rocket"></use>
             </svg>
             Поддержка отечественного производителя
           </li>
           <li class="about__item about__item--pack">
             <svg class="about__icon about__icon--pack" width="32.666px" height="32.486px">
-              <use xlink:href="img/sprite.svg#icon-pack"></use>
+              <use xlink:href="#icon-feature-gift"></use>
             </svg>
             Поставляется в подарочной упаковке
           </li>
@@ -188,12 +192,12 @@
           <div class="slider__buttons-wrapper">
             <button class="slider__button slider__button--prev" type="button">
               <svg class="slider__arrow" width="50px" height="26.003px">
-                <use xlink:href="img/sprite.svg#icon-btn-prev"></use>
+                <use xlink:href="#icon-left-arrow"></use>
               </svg>
             </button>
             <button class="slider__button slider__button--next" type="button">
               <svg class="slider__arrow" width="50px" height="26.003px">
-                <use xlink:href="img/sprite.svg#icon-btn-next"></use>
+                <use xlink:href="#icon-right-arrow"></use>
               </svg>
             </button>
           </div>
@@ -221,7 +225,7 @@
       <div class="contacts__map-wrapper">
         <iframe class="contacts__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3084932233467!2d30.322567283333694!3d59.93849747624844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563369028326!5m2!1sru!2sru"
-          allowfullscreen></iframe>
+          allowfullscreen=""></iframe>
       </div>
 
       <div class="contacts__wrapper">
@@ -233,7 +237,7 @@
   <footer class="footer">
     <a class="footer__logo">
       <svg width="101.615px" height="34.056px">
-        <use xlink:href="img/sprite.svg#icon-footer-logo"></use>
+        <use xlink:href="#icon-logo-footer"></use>
       </svg>
     </a>
     <div class="social">
@@ -241,21 +245,21 @@
         <li class="social__item">
           <a href="#" class="social__link">
             <svg class="social__icon" width="21.769px" height="21.334px">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item social__item--facebook">
           <a href="#" class="social__link">
             <svg class="social__icon" width="14.962px" height="27.718px">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link">
             <svg class="social__icon" width="23.494px" height="20.168px">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
@@ -265,7 +269,7 @@
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" target="_blank">
         <span>Разработано</span>
         <svg class="copyright__logo" width="26.943px" height="34.09px">
-          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          <use xlink:href="#icon-logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
