@@ -12,6 +12,7 @@
   src: url("../fonts/opensans.woff") format("woff");
   src: url("../fonts/opensans.woff2") format("woff2");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -19,6 +20,7 @@
   src: url("../fonts/opensansbold.woff") format("woff");
   src: url("../fonts/opensansbold.woff2") format("woff2");
   font-weight: 600;
+  font-display: swap;
 }
 
 body {
