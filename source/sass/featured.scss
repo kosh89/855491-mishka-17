@@ -154,6 +154,10 @@
   .featured {
     margin-bottom: 61px;
     padding-bottom: 94px;
+
+    &::after {
+      height: 21px;
+    }
   }
 
   .featured__heading-wrapper {
