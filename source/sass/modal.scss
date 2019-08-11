@@ -72,6 +72,10 @@
     color: #444444;
   }
 
+  &:hover label {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
   &:nth-child(2) {
     margin: 0 7px;
   }
