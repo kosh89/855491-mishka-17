@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  min-height: 80px;
 }
 
 .header__nav-toggle {
@@ -11,6 +12,7 @@
   width: 20px;
   height: 14px;
   outline: none;
+  z-index: 2;
 }
 
 .header__nav-toggle span,
