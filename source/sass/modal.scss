@@ -27,6 +27,8 @@
   background-color: #ffffff;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2);
+  animation: appearing;
+  animation-duration: 0.6s;
 }
 
 .modal__heading {
@@ -68,6 +70,10 @@
     line-height: 16px;
     font-weight: 600;
     color: #444444;
+  }
+
+  &:hover label {
+    border-color: rgba(68, 68, 68, 0.3);
   }
 
   &:nth-child(2) {

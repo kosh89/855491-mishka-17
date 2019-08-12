@@ -60,26 +60,13 @@
     margin-bottom: 110px;
 
     &::after {
-      content: none;
+      height: 21px;
+      bottom: -88px;
     }
   }
 
   .reviews__wrapper {
     width: 1050px;
     padding: 73px 79px 96px 170px;
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "";
-      min-width: 100%;
-      height: 21px;
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-position: bottom;
-      background-size: contain;
-      background-repeat: repeat-x;
-      bottom: -87px;
-      left: 0;
-    }
   }
 }
