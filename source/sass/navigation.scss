@@ -71,12 +71,6 @@
   }
 }
 
-.navigation__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .navigation__link {
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
@@ -114,14 +108,7 @@
     flex-direction: row;
     align-items: flex-start;
     overflow: inherit;
-  }
-
-  .navigation__wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    flex-grow: 1;
-    border-bottom: 1px solid #ececec;
+    box-shadow: 0 1px 0 0 #ececec;
   }
 
   .navigation__item {
