@@ -142,6 +142,7 @@
       width: 296px;
       padding-left: 84px;
       order: -1;
+      border-right: 1px solid #ececec;
     }
 
     &--catalog {
@@ -150,6 +151,7 @@
       position: absolute;
       bottom: -57px;
       left: 50px;
+      border-left: 1px solid #ececec;
 
       &::after {
         content: none;
