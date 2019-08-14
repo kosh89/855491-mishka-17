@@ -6,18 +6,6 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    min-width: 100%;
-    height: 6px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-position: bottom;
-    background-size: contain;
-    bottom: 0;
-    left: 0;
-  }
 }
 
 .featured__heading-wrapper {
@@ -39,7 +27,21 @@
 }
 
 .featured__wrapper {
+  position: relative;
   width: 260px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    min-width: 100%;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: repeat-x;
+    bottom: -42px;
+    left: 0;
+  }
 }
 
 .featured__description-wrapper {
@@ -71,6 +73,10 @@
 .featured__link {
   display: block;
   background-color: #cbdfe2;
+
+  img {
+    display: block;
+  }
 }
 
 .featured__order-wrapper {
@@ -92,10 +98,6 @@
   .featured {
     margin-bottom: 50px;
     padding-bottom: 68px;
-
-    &::after {
-      height: 15px;
-    }
   }
 
   .featured__heading-wrapper {
@@ -118,6 +120,11 @@
     align-items: flex-start;
     position: relative;
     min-height: 404px;
+
+    &::after {
+      height: 15px;
+      bottom: -65px;
+    }
   }
 
   .featured__description-wrapper,
@@ -148,6 +155,7 @@
 
   .featured__link {
     position: absolute;
+    top: 0;
     right: 0;
   }
 }
@@ -156,10 +164,6 @@
   .featured {
     margin-bottom: 61px;
     padding-bottom: 94px;
-
-    &::after {
-      height: 21px;
-    }
   }
 
   .featured__heading-wrapper {
@@ -172,6 +176,11 @@
     width: 1050px;
     padding-left: 175px;
     min-height: 470px;
+
+    &::after {
+      height: 21px;
+      bottom: -95px;
+    }
   }
 
   .featured__week-good {
